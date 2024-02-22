@@ -1,0 +1,25 @@
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+// Servlet implementation
+public class SimpleServlet extends HttpServlet {
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        // Set content type
+        response.setContentType("text/html");
+
+        // Create PrintWriter object
+        PrintWriter out = response.getWriter();
+        
+        // Write HTML content to the response
+        out.println("<html>");
+        out.println("<head>");
+        out.println("<title>Simple Java Servlet Example</title>");
+        out.println("</head>");
+        out.println("<body>");
+        out.println("<h1>Hello, world!</h1>");
+        out.println("<p>This is a simple Java servlet example.</p>");
+        out.println("</body>")
