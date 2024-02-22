@@ -11,10 +11,10 @@ public class SimpleServlet extends HttpServlet {
         // Set content type
         response.setContentType("text/html");
 
-        // Create PrintWriter object
+        // Create PrintWriter object1
         PrintWriter out = response.getWriter();
         
-        // Write HTML content to the response
+        // Write HTML content to the response1
         out.println("<html>");
         out.println("<head>");
         out.println("<title>Simple Java Servlet Example</title>");
